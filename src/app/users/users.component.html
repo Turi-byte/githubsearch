@@ -1,0 +1,41 @@
+<div class="row">
+  <div class="col-xs-12" style="display: flex; margin-left: 10%;">
+    <div class="logo" style="display :-moz-inline-gride;" id="users" (click)="searchUsers = true">
+      <img src="../../assets/Screenshot_20190823_125224.jpg"
+        style="max-height: 60px; cursor: pointer; border-radius:30px; margin-left: 5px;" alt="users logo">
+      <button type="button" class="btn btn-info">Users</button>
+    </div>
+    <div class="logo" style="display :-moz-inline-gride; margin-left: 20px;" id="repos" (click)="searchUsers = false">
+      <img src="../../assets/Screenshot_20190823_125153.jpg"
+        style="max-height: 60px; cursor: pointer; border-radius:30px; margin-left: 5px;" alt="users logo">
+      <button type="button" class="btn btn-warning">Repo</button>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12" style="margin-left: 10%;margin-top: 2%;">
+    <form style="margin-bottom: 2%;">
+      <input type="text" style="max-width: 20%;" class="form-control" placeholder="Enter Username" [(ngModel)]="username" name="username" (keyup)="profileRequest()">
+    </form>
+    <div>
+      <div *ngIf="searchUsers" class="col-xs-9">
+        <div class="col-sm-3">
+          <img 
+          src="{{user.avatar_url}}"
+          style="max-height: 200px; border-radius: 100px;" 
+          alt="avatar">
+          <br>
+          <a href="{{user.html_url}}" target="_blank"><button class="btn btn-link">See Profile</button></a>
+        </div>
+        <div class="col-sm-6" style="margin-left: 5%;">
+          <h3>{{user.name}}</h3>
+          <div style="display: flex;">
+            <p>Followers<br><span>{{user.followers}}</span></p>
+            <p style="margin-left: 8px;">{{user.following}}<br><span>4</span></p>
+            <p style="margin-left: 8px;">{{user.public_repos}}<br><span>25</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
