@@ -31,11 +31,23 @@
           <h3>{{user.name}}</h3>
           <div style="display: flex;">
             <p>Followers<br><span>{{user.followers}}</span></p>
-            <p style="margin-left: 8px;">{{user.following}}<br><span>4</span></p>
-            <p style="margin-left: 8px;">{{user.public_repos}}<br><span>25</span></p>
+            <p style="margin-left: 8px;">Following<br><span>{{user.following}}</span></p>
+            <p style="margin-left: 8px;">Repositories<br><span>{{user.public_repos}}</span></p>
           </div>
         </div>
       </div>
+       <div *ngIf=!searchUsers>
+        <div class="row">
+            <div class="col-md-4">
+                <div *ngFor="let rep of repository" class="card">
+                    <a href="{{rep.html_url}}" target="_blank">
+                        <h3>{{rep.name}}</h3>
+                        <p>{{rep.description}}</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+       </div>
     </div>
   </div>
 </div>
