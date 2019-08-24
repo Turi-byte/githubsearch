@@ -4,9 +4,9 @@ import { LandingComponent } from './landing/landing.component';
 import { UsersComponent } from './users/users.component';
 
 
-const routes: Routes = [
+const routes: Routes = [  
   {path:'',component:LandingComponent},
-  {path:'users',component:UsersComponent}
+  {path:'users',component:UsersComponent},
 ];
 
 @NgModule({

@@ -1,0 +1,16 @@
+.content-wrapper{
+ display: inline-block;
+}
+.card{
+    padding-block: 5px;
+}
+.jumbotron{
+    background-color: white;
+    display: block;
+    align-content: center;
+}
+main{
+    max-width: 1000px;
+    background-color: blue;
+    opacity: 0.4;
+}
