@@ -2,12 +2,12 @@
   <div class="row">
     <div class="col-xs-12" style="display: flex; margin-left: 10%;">
       <div class="logo" style="display :-moz-inline-gride;" id="users" (click)="searchUsers = true">
-        <img src="../../assets/Screenshot_20190823_125224.jpg"
+        <img src="../../assets/Screenshot_20190823_125224.jpg" class="appHighlight"
           style="max-height: 60px; cursor: pointer; border-radius:30px; margin-left: 5px;" alt="users logo">
         <button type="button" class="btn btn-info">Users</button>
       </div>
       <div class="logo" style="display :-moz-inline-gride; margin-left: 20px;" id="repos" (click)="searchUsers = false">
-        <img src="../../assets/Screenshot_20190823_125153.jpg"
+        <img src="../../assets/Screenshot_20190823_125107.jpg" class="appHighlight"
           style="max-height: 60px; cursor: pointer; border-radius:30px; margin-left: 5px;" alt="users logo">
         <button type="button" class="btn btn-warning">Repo</button>
       </div>
@@ -28,19 +28,19 @@
           </div>
           <div class="col-sm-6" style="margin-left: 5%;">
             <h3>{{user.name}}</h3>
-            <div style="display: flex;">
+            <div style="margin-left: 40px;">
               <p>Followers<br><span>{{user.followers}}</span></p>
-              <p style="margin-left: 8px;">Following<br><span>{{user.following}}</span></p>
-              <p style="margin-left: 8px;">Repositories<br><span>{{user.public_repos}}</span></p>
+              <p>Following<br><span>{{user.following}}</span></p>
+              <p>Repositories<br><span>{{user.public_repos}}</span></p>
             </div>
           </div>
         </div>
       </div>
       <div *ngIf=!searchUsers>
         <div class="row repo">
-          <div *ngFor="let rep of repository" class="appHighlight">
+          <div *ngFor="let rep of repository">
             <div class="column">
-              <div class="card">
+              <div class="card" style="margin-right: 50px">
                 <a href="{{rep.html_url}}" target="_blank">
                   <h3>{{rep.name}}</h3>
                   <p>{{rep.description}}</p>

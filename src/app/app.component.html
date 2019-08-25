@@ -1,9 +1,15 @@
-<nav>
+<div class="full">
+  <nav>
     <ng-progress></ng-progress>
     <div class="logo" style="display :-moz-inline-gride">
-        <img src="../assets/gitty.png" style="max-height: 60px; cursor: pointer;" alt="github logo" routerlink=" ">
-        <button type="button" class="btn btn-primary" routerLink="/">Home</button>  
-        <button class="btn btn-success" routerLink="./users">search</button>              
+      <img src="../assets/gitty.png" style="max-height: 60px; cursor: pointer;" alt="github logo" routerlink=" ">
+      <button type="button" class="btn btn-primary" routerLink="/">Home</button>
+      <button class="btn btn-success" routerLink="./users">search</button>
     </div>
-</nav>
-<router-outlet></router-outlet>
+  </nav>
+  <div class="jumbotron">
+    <h1 class="ml-2">GitHub Search</h1>
+    <hr>
+  </div>
+  <router-outlet></router-outlet>
+</div>

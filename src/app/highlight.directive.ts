@@ -8,15 +8,16 @@ export class HighlightDirective {
   constructor(private el: ElementRef) { }
 
   @HostListener('mouseenter') onmouseenter(){
-    this.hover('#C46D5E');
+    this.hover('80px','40px');
   }
 
   @HostListener('mouseleave') onmouseleave(){
-    this.hover('#DAA588');
+    this.hover('60px','30px');
   }
 
-  private hover(color: string){
-    this.el.nativeElement.style.borderColor = color;
+  private hover(height: string, radius: string){
+    this.el.nativeElement.style.maxHeight = height;
+    this.el.nativeElement.style.borderRadius = radius;
   }
 
 }
