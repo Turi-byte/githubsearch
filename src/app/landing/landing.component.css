@@ -3,14 +3,13 @@
 }
 .card{
     padding-block: 5px;
+    color: brown;
 }
 .jumbotron{
     background-color: white;
     display: block;
     align-content: center;
 }
-main{
+/* .main{
     max-width: 1000px;
-    background-color: blue;
-    opacity: 0.4;
-}
+} */

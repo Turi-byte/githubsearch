@@ -8,18 +8,22 @@ import { LandingComponent } from './landing/landing.component';
 import { UsersComponent } from './users/users.component';
 import { GithubServiceService } from './github-service.service';
 import { HttpClientModule } from '@angular/common/http';
+import { NgProgressModule } from '@ngx-progressbar/core';
+import {NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingComponent,
-    UsersComponent
+    UsersComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgProgressModule.forRoot(),
+    NgProgressHttpClientModule
   ],
   providers: [GithubServiceService],
   bootstrap: [AppComponent]
