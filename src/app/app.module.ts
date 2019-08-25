@@ -10,12 +10,14 @@ import { GithubServiceService } from './github-service.service';
 import { HttpClientModule } from '@angular/common/http';
 import { NgProgressModule } from '@ngx-progressbar/core';
 import {NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingComponent,
     UsersComponent,
+    HighlightDirective,
   ],
   imports: [
     BrowserModule,

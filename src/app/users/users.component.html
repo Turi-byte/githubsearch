@@ -38,7 +38,7 @@
       </div>
       <div *ngIf=!searchUsers>
         <div class="row repo">
-          <div *ngFor="let rep of repository">
+          <div *ngFor="let rep of repository" class="appHighlight">
             <div class="column">
               <div class="card">
                 <a href="{{rep.html_url}}" target="_blank">
