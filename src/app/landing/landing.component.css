@@ -2,8 +2,7 @@
  display: inline-block;
 }
 .card{
-    padding-block: 5px;
-    color: brown;
+    padding-block: 5px;    
 }
 .jumbotron{
     background-color: white;
