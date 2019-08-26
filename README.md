@@ -5,22 +5,22 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Developed By
 Breldan Muthaka
 
-##Screenshots
+## Screenshots
 <img src="/home/turi/Pictures/landing.png" alt="The Landing Page" style="max-height: 100px;">
 
-##Behaviour Driven Development
-|Behaviour: | Input | Output|
-|--------|--------|--------|
-|User types the GitHUb username | turi-byte | turi-byte, profile and github repositories|
+## Behaviour Driven Development
+ |Behaviour: | Input | Output|
+ |--------|--------|--------|
+ |User types the GitHUb username | turi-byte | turi-byte, profile and github repositories|
 
-##Setup/Installation Requirements
+## Setup/Installation Requirements
 <ul>
  <li> Connect to the internet on your preferred browser </li>
  <li> Open the link : https://github.com/Turi-byte/githubsearch</li>
  <li> Finally ,either clone the repository or download the zip file
 </ul>
 
-##Known Bugs
+## Known Bugs
 
 In case the searched user's repository fails to load, clear the searchbox the repositories will show. 
 
