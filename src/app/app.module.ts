@@ -11,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgProgressModule } from '@ngx-progressbar/core';
 import {NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
 import { HighlightDirective } from './highlight.directive';
+import { ShortenPipe } from './shorten.pipe';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { HighlightDirective } from './highlight.directive';
     LandingComponent,
     UsersComponent,
     HighlightDirective,
+    ShortenPipe,
   ],
   imports: [
     BrowserModule,
